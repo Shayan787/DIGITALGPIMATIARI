@@ -404,6 +404,35 @@
             font-weight: 600;
         }
 
+        /* Video Placeholder */
+        .video-placeholder {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, #1a5f7a, #159895);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .video-placeholder i {
+            font-size: 4rem;
+            margin-bottom: 20px;
+        }
+
+        .video-placeholder h3 {
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .video-placeholder p {
+            color: rgba(255, 255, 255, 0.9);
+            max-width: 80%;
+        }
+
         /* Minimal Footer */
         footer {
             background-color: var(--dark-color);
@@ -489,6 +518,10 @@
             
             .video-player {
                 height: 300px;
+            }
+            
+            .course-tab-content {
+                padding: 20px;
             }
         }
 
@@ -594,7 +627,7 @@
                     <i class="fas fa-file-excel"></i>
                 </div>
                 <div class="course-content">
-                    <h3>MS Office</h3>
+                    <h3>Office Automation</h3>
                     <p class="course-desc">Master Microsoft Office applications including Word, Excel, PowerPoint, and Outlook for productivity and professional document creation.</p>
                     <div class="course-meta">
                         <span><i class="far fa-clock"></i> 30+ Hours</span>
@@ -609,7 +642,7 @@
                     <i class="fas fa-paint-brush"></i>
                 </div>
                 <div class="course-content">
-                    <h3>Adobe Photoshop</h3>
+                    <h3>Graphic Designing</h3>
                     <p class="course-desc">Learn professional photo editing, graphic design, and digital art creation using Adobe Photoshop. From basics to advanced techniques.</p>
                     <div class="course-meta">
                         <span><i class="far fa-clock"></i> 35+ Hours</span>
@@ -666,10 +699,10 @@
         </section>
 
         <!-- Web Development Course Details -->
-        <section class="course-details active" id="web-dev-details">
+        <section class="course-details" id="web-dev-details">
             <div class="course-details-header">
                 <h2><i class="fas fa-code"></i> Web Development Course</h2>
-                <button class="close-details" id="closeDetails">
+                <button class="close-details">
                     <i class="fas fa-times"></i>
                 </button>
             </div>
@@ -803,6 +836,619 @@
                 </div>
             </div>
         </section>
+
+        <!-- MS Office Course Details -->
+        <section class="course-details" id="ms-office-details">
+            <div class="course-details-header">
+                <h2><i class="fas fa-file-excel"></i> MS Office Course</h2>
+                <button class="close-details">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <div class="course-tabs">
+                <button class="course-tab active" data-tab="msword">MS Word Tutorials</button>
+                <button class="course-tab" data-tab="msexcel">MS Excel Tutorials</button>
+                <button class="course-tab" data-tab="mspowerpoint">MS PowerPoint Tutorials</button>
+            </div>
+            
+            <!-- MS Word Tab Content -->
+            <div class="course-tab-content active" id="msword-content">
+                <div class="video-container">
+                    <div class="video-player" id="msword-video-player">
+                        <!-- First video from the MS Office playlist -->
+                        <iframe src="https://www.youtube.com/embed/playlist?list=PLpv-wtT1BJLxv3vipIJvAaTg2VR1_1WQq&si=fMhuI1_1ww_jJGui" title="MS Word Tutorial" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>Microsoft Word Tutorial for Beginners</h3>
+                        <p class="video-desc">Microsoft Word is the most popular word processing software. This tutorial covers the basics of Word, including document creation, formatting, editing, and advanced features for professional document preparation.</p>
+                    </div>
+                </div>
+                
+                <div class="playlist-info">
+                    <h3><i class="fas fa-play-circle"></i> Complete MS Word Playlist Section</h3>
+                    <p>This section contains comprehensive tutorials on Microsoft Word, from beginner to advanced levels. Learn document formatting, templates, mail merge, and professional documentation skills.</p>
+                    <div class="playlist-stats">
+                        <div class="playlist-stat">
+                            <i class="fas fa-video"></i>
+                            <span>10+ Word Videos</span>
+                        </div>
+                        <div class="playlist-stat">
+                            <i class="far fa-clock"></i>
+                            <span>8+ Hours Content</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- MS Excel Tab Content -->
+            <div class="course-tab-content" id="msexcel-content">
+                <div class="video-container">
+                    <div class="video-player" id="msexcel-video-player">
+                        <!-- Excel video from the playlist -->
+                        <iframe src="https://www.youtube.com/embed/playlist?list=PLpv-wtT1BJLyPXxCFId1l73HbOqNWhCnO&si=wjzUE0h0iN6hNfSi" title="MS Excel Tutorial" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>Microsoft Excel Tutorial for Beginners</h3>
+                        <p class="video-desc">Microsoft Excel is essential for data analysis, calculations, and business intelligence. Learn spreadsheet creation, formulas, functions, charts, and data analysis techniques in this comprehensive tutorial.</p>
+                    </div>
+                </div>
+                
+                <div class="playlist-info">
+                    <h3><i class="fas fa-play-circle"></i> Complete MS Excel Playlist Section</h3>
+                    <p>The Excel section covers everything from basic spreadsheet operations to advanced functions, data analysis, pivot tables, and visualization techniques for business and academic purposes.</p>
+                    <div class="playlist-stats">
+                        <div class="playlist-stat">
+                            <i class="fas fa-video"></i>
+                            <span>12+ Excel Videos</span>
+                        </div>
+                        <div class="playlist-stat">
+                            <i class="far fa-clock"></i>
+                            <span>10+ Hours Content</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- MS PowerPoint Tab Content -->
+            <div class="course-tab-content" id="mspowerpoint-content">
+                <div class="video-container">
+                    <div class="video-player" id="mspowerpoint-video-player">
+                        <!-- PowerPoint video from the playlist -->
+                        <iframe src="https://www.youtube.com/embed/playlist?list=PLpv-wtT1BJLxc4Cj1Jr-aQUgkckiOkEY4&si=b0aF3mv8iIXywZUP" title="MS PowerPoint Tutorial" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>Microsoft PowerPoint Tutorial for Beginners</h3>
+                        <p class="video-desc">Create professional presentations with Microsoft PowerPoint. This tutorial covers slide creation, design, animations, transitions, and presentation delivery techniques for effective communication.</p>
+                    </div>
+                </div>
+                
+                <div class="playlist-info">
+                    <h3><i class="fas fa-play-circle"></i> Complete MS PowerPoint Playlist Section</h3>
+                    <p>Learn to create stunning presentations with PowerPoint. This section includes tutorials on slide design, animation effects, multimedia integration, and professional presentation skills.</p>
+                    <div class="playlist-stats">
+                        <div class="playlist-stat">
+                            <i class="fas fa-video"></i>
+                            <span>8+ PowerPoint Videos</span>
+                        </div>
+                        <div class="playlist-stat">
+                            <i class="far fa-clock"></i>
+                            <span>6+ Hours Content</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Graphic Designing Course Details -->
+        <section class="course-details" id="photoshop-details">
+            <div class="course-details-header">
+                <h2><i class="fas fa-paint-brush"></i> Graphic Designing Course</h2>
+                <button class="close-details">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <div class="course-tabs">
+                <button class="course-tab active" data-tab="introduction">Introduction to Photoshop</button>
+            </div>
+            
+            <!-- Introduction Tab Content -->
+            <div class="course-tab-content active" id="introduction-content">
+                <div class="video-container">
+                    <div class="video-player" id="introduction-video-player">
+                        <!-- First video from the Graphic Designing playlist -->
+                        <iframe src="https://www.youtube.com/embed/videoseries?list=PLW-zSkCnZ-gA5Jn6gZtUa6-aG0OoRZyb6&index=1" title="Graphic Designing Introduction" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>Introduction to Adobe Photoshop</h3>
+                        <p class="video-desc">Get started with Adobe Photoshop, the industry-standard software for graphic design, photo editing, and digital art creation. Learn the interface, basic tools, and essential concepts to begin your graphic design journey.</p>
+                    </div>
+                </div>
+                
+                <div class="playlist-info">
+                    <h3><i class="fas fa-play-circle"></i> Photoshop Basics Section</h3>
+                    <p>This section covers fundamental Photoshop skills including workspace navigation, basic tools, layers, selections, and image adjustments. Perfect for absolute beginners who want to learn graphic design from scratch.</p>
+                    <div class="playlist-stats">
+                        <div class="playlist-stat">
+                            <i class="fas fa-video"></i>
+                            <span>12+ Beginner Videos</span>
+                        </div>
+                        <div class="playlist-stat">
+                            <i class="far fa-clock"></i>
+                            <span>8+ Hours Content</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Computer Networking Course Details -->
+        <section class="course-details" id="networking-details">
+            <div class="course-details-header">
+                <h2><i class="fas fa-network-wired"></i> Computer Networking Course</h2>
+                <button class="close-details">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <div class="course-tabs">
+                <button class="course-tab active" data-tab="introduction-networking">Introduction to Networking</button>
+                <button class="course-tab" data-tab="osi-model">OSI Model</button>
+                <button class="course-tab" data-tab="tcp-ip">TCP/IP Protocol</button>
+                <button class="course-tab" data-tab="full-playlist-networking">Full Playlist</button>
+            </div>
+            
+            <!-- Introduction to Networking Tab Content -->
+            <div class="course-tab-content active" id="introduction-networking-content">
+                <div class="video-container">
+                    <div class="video-player" id="introduction-networking-video-player">
+                        <!-- First video from the Computer Networking playlist -->
+                        <iframe src="https://www.youtube.com/embed/videoseries?list=PLxCzCOWd7aiGFBD2-2joCpWOLUrDLvVV_&index=1" title="Introduction to Computer Networking" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>Introduction to Computer Networking</h3>
+                        <p class="video-desc">This is the first video in the Computer Networking playlist. Learn the fundamentals of computer networks, types of networks, network topologies, and basic networking concepts. Perfect for beginners starting their networking journey.</p>
+                    </div>
+                </div>
+                
+                <div class="playlist-info">
+                    <h3><i class="fas fa-play-circle"></i> Networking Fundamentals Section</h3>
+                    <p>This section covers basic networking concepts including network types (LAN, MAN, WAN), network topologies, network devices, and fundamental protocols. Essential for understanding how computer networks operate.</p>
+                    <div class="playlist-stats">
+                        <div class="playlist-stat">
+                            <i class="fas fa-video"></i>
+                            <span>15+ Fundamental Videos</span>
+                        </div>
+                        <div class="playlist-stat">
+                            <i class="far fa-clock"></i>
+                            <span>12+ Hours Content</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- OSI Model Tab Content -->
+            <div class="course-tab-content" id="osi-model-content">
+                <div class="video-container">
+                    <div class="video-player" id="osi-model-video-player">
+                        <!-- OSI Model video from the playlist (using index 2 as an example) -->
+                        <iframe src="https://www.youtube.com/embed/videoseries?list=PLxCzCOWd7aiGFBD2-2joCpWOLUrDLvVV_&index=2" title="OSI Model Explained" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>OSI Model - Open Systems Interconnection</h3>
+                        <p class="video-desc">The OSI (Open Systems Interconnection) model is a conceptual framework used to understand network interactions. Learn about all seven layers - Physical, Data Link, Network, Transport, Session, Presentation, and Application layers.</p>
+                    </div>
+                </div>
+                
+                <div class="playlist-info">
+                    <h3><i class="fas fa-layer-group"></i> OSI Model & Network Protocols</h3>
+                    <p>This section covers the OSI model in detail along with various network protocols operating at different layers. Understand how data travels through networks and how different protocols facilitate communication.</p>
+                    <div class="playlist-stats">
+                        <div class="playlist-stat">
+                            <i class="fas fa-video"></i>
+                            <span>10+ Protocol Videos</span>
+                        </div>
+                        <div class="playlist-stat">
+                            <i class="far fa-clock"></i>
+                            <span>8+ Hours Content</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- TCP/IP Tab Content -->
+            <div class="course-tab-content" id="tcp-ip-content">
+                <div class="video-container">
+                    <div class="video-player" id="tcp-ip-video-player">
+                        <!-- TCP/IP video from the playlist (using index 3 as an example) -->
+                        <iframe src="https://www.youtube.com/embed/videoseries?list=PLxCzCOWd7aiGFBD2-2joCpWOLUrDLvVV_&index=3" title="TCP/IP Protocol Suite" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>TCP/IP Protocol Suite</h3>
+                        <p class="video-desc">The TCP/IP protocol suite is the foundation of the modern internet. Learn about TCP (Transmission Control Protocol), IP (Internet Protocol), UDP (User Datagram Protocol), and other essential protocols that make internet communication possible.</p>
+                    </div>
+                </div>
+                
+                <div class="playlist-info">
+                    <h3><i class="fas fa-sitemap"></i> Internet Protocols Section</h3>
+                    <p>This section covers the TCP/IP protocol suite in depth, including IP addressing, subnetting, routing protocols, transport layer protocols, and application layer protocols essential for network communication.</p>
+                    <div class="playlist-stats">
+                        <div class="playlist-stat">
+                            <i class="fas fa-video"></i>
+                            <span>15+ TCP/IP Videos</span>
+                        </div>
+                        <div class="playlist-stat">
+                            <i class="far fa-clock"></i>
+                            <span>10+ Hours Content</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Full Playlist Tab Content -->
+            <div class="course-tab-content" id="full-playlist-networking-content">
+                <div class="video-container">
+                    <div class="video-player" id="full-playlist-networking-player">
+                        <!-- Complete Computer Networking Playlist -->
+                        <iframe src="https://www.youtube.com/embed/videoseries?list=PLxCzCOWd7aiGFBD2-2joCpWOLUrDLvVV_" title="Complete Computer Networking Playlist" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                    <div class="video-info">
+                        <h3>Complete Computer Networking Playlist</h3>
+                        <p class="video-desc">This comprehensive computer networking playlist covers everything from basic networking concepts to advanced topics. Created by Gate Smashers, this playlist is perfect for students, IT professionals, and anyone preparing for networking certifications.</p>
+                    </div>
+                </div>
+                
+                <div class="playlist-info">
+                    <h3><i class="fas fa-list"></i> Playlist Information</h3>
+                    <p>This complete playlist includes comprehensive coverage of:</p>
+                    <ul style="margin-left: 20px; margin-top: 10px; color: #666;">
+                        <li><strong>Network Fundamentals:</strong> Basics, types, topologies, and devices</li>
+                        <li><strong>OSI & TCP/IP Models:</strong> Layered architecture and protocols</li>
+                        <li><strong>Network Protocols:</strong> HTTP, FTP, SMTP, DNS, DHCP, etc.</li>
+                        <li><strong>Network Security:</strong> Firewalls, VPNs, encryption, and security protocols</li>
+                        <li><strong>Routing & Switching:</strong> Routing algorithms, switching concepts</li>
+                        <li><strong>Wireless Networks:</strong> WiFi standards, mobile networks</li>
+                        <li><strong>Network Administration:</strong> Configuration, troubleshooting, management</li>
+                    </ul>
+                    <div class="playlist-stats">
+                        <div class="playlist-stat">
+                            <i class="fas fa-video"></i>
+                            <span>55+ Total Videos</span>
+                        </div>
+                        <div class="playlist-stat">
+                            <i class="far fa-clock"></i>
+                            <span>40+ Hours Content</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Database Management Course Details -->
+        <section class="course-details" id="database-details">
+            <div class="course-details-header">
+                <h2><i class="fas fa-database"></i> Database Management Course</h2>
+                <button class="close-details">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <div class="course-tabs">
+                <button class="course-tab active" data-tab="introduction-dbms">Introduction to DBMS</button>
+                <button class="course-tab" data-tab="sql-tutorials">SQL Tutorials</button>
+                <button class="course-tab" data-tab="advanced-database">Advanced Database Concepts</button>
+                <button class="course-tab" data-tab="full-playlist-database">Full Playlist</button>
+            </div>
+            
+            <!-- Introduction to DBMS Tab Content -->
+            <div class="course-tab-content active" id="introduction-dbms-content">
+                <div class="video-container">
+                    <div class="video-player" id="introduction-dbms-video-player">
+                        <!-- Video Placeholder - Add YouTube video link here later -->
+                        <div class="video-placeholder">
+                            <i class="fas fa-database"></i>
+                            <h3>Database Management Introduction</h3>
+                            <p>Add YouTube video link here for Introduction to DBMS. The video will appear in this space.</p>
+                            <p style="font-size: 0.9rem; margin-top: 10px;">Replace this placeholder with iframe code when you have the video link.</p>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Introduction to Database Management Systems</h3>
+                        <p class="video-desc">Database Management Systems (DBMS) are essential for storing, retrieving, and managing data efficiently. This introduction covers the fundamentals of databases, data models, and the importance of DBMS in modern applications.</p>
+                    </div>
+                </div>
+                
+                <div class="playlist-info">
+                    <h3><i class="fas fa-play-circle"></i> DBMS Fundamentals Section</h3>
+                    <p>This section covers the basics of Database Management Systems including data models, database architecture, ER diagrams, normalization, and transaction management. Essential for anyone starting with databases.</p>
+                    <div class="playlist-stats">
+                        <div class="playlist-stat">
+                            <i class="fas fa-video"></i>
+                            <span>12+ DBMS Videos</span>
+                        </div>
+                        <div class="playlist-stat">
+                            <i class="far fa-clock"></i>
+                            <span>10+ Hours Content</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- SQL Tutorials Tab Content -->
+            <div class="course-tab-content" id="sql-tutorials-content">
+                <div class="video-container">
+                    <div class="video-player" id="sql-tutorials-video-player">
+                        <!-- Video Placeholder - Add YouTube video link here later -->
+                        <div class="video-placeholder">
+                            <i class="fas fa-code"></i>
+                            <h3>SQL Tutorials</h3>
+                            <p>Add YouTube video link here for SQL Tutorials. The video will appear in this space.</p>
+                            <p style="font-size: 0.9rem; margin-top: 10px;">Replace this placeholder with iframe code when you have the video link.</p>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Structured Query Language (SQL) Tutorials</h3>
+                        <p class="video-desc">SQL is the standard language for interacting with relational databases. Learn how to create, read, update, and delete data using SQL queries. This section covers basic to advanced SQL concepts including joins, subqueries, and database functions.</p>
+                    </div>
+                </div>
+                
+                <div class="playlist-info">
+                    <h3><i class="fas fa-database"></i> SQL Learning Path</h3>
+                    <p>Master SQL with comprehensive tutorials covering data definition language (DDL), data manipulation language (DML), data control language (DCL), and transaction control language (TCL). Practice with real-world examples and database exercises.</p>
+                    <div class="playlist-stats">
+                        <div class="playlist-stat">
+                            <i class="fas fa-video"></i>
+                            <span>18+ SQL Videos</span>
+                        </div>
+                        <div class="playlist-stat">
+                            <i class="far fa-clock"></i>
+                            <span>15+ Hours Content</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Advanced Database Concepts Tab Content -->
+            <div class="course-tab-content" id="advanced-database-content">
+                <div class="video-container">
+                    <div class="video-player" id="advanced-database-video-player">
+                        <!-- Video Placeholder - Add YouTube video link here later -->
+                        <div class="video-placeholder">
+                            <i class="fas fa-cogs"></i>
+                            <h3>Advanced Database Concepts</h3>
+                            <p>Add YouTube video link here for Advanced Database Concepts. The video will appear in this space.</p>
+                            <p style="font-size: 0.9rem; margin-top: 10px;">Replace this placeholder with iframe code when you have the video link.</p>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Advanced Database Management Concepts</h3>
+                        <p class="video-desc">Explore advanced database topics including query optimization, indexing, concurrency control, database security, distributed databases, and NoSQL databases. Essential for database administrators and advanced developers.</p>
+                    </div>
+                </div>
+                
+                <div class="playlist-info">
+                    <h3><i class="fas fa-chart-line"></i> Advanced Database Topics</h3>
+                    <p>This section covers complex database concepts for professionals including database tuning, backup and recovery, data warehousing, data mining, and emerging database technologies. Prepare for database certification and advanced database roles.</p>
+                    <div class="playlist-stats">
+                        <div class="playlist-stat">
+                            <i class="fas fa-video"></i>
+                            <span>15+ Advanced Videos</span>
+                        </div>
+                        <div class="playlist-stat">
+                            <i class="far fa-clock"></i>
+                            <span>12+ Hours Content</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Full Playlist Tab Content -->
+            <div class="course-tab-content" id="full-playlist-database-content">
+                <div class="video-container">
+                    <div class="video-player" id="full-playlist-database-player">
+                        <!-- Video Placeholder - Add YouTube playlist link here later -->
+                        <div class="video-placeholder">
+                            <i class="fas fa-list"></i>
+                            <h3>Complete Database Management Playlist</h3>
+                            <p>Add YouTube playlist link here for the complete Database Management course. The entire playlist will appear in this space.</p>
+                            <p style="font-size: 0.9rem; margin-top: 10px;">Replace this placeholder with iframe code when you have the playlist link.</p>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Complete Database Management Playlist</h3>
+                        <p class="video-desc">This comprehensive database management playlist covers everything from basic DBMS concepts to advanced database administration. Perfect for students, developers, database administrators, and anyone preparing for database-related certifications.</p>
+                    </div>
+                </div>
+                
+                <div class="playlist-info">
+                    <h3><i class="fas fa-list"></i> Playlist Information</h3>
+                    <p>This complete playlist includes comprehensive coverage of:</p>
+                    <ul style="margin-left: 20px; margin-top: 10px; color: #666;">
+                        <li><strong>Database Fundamentals:</strong> Introduction to DBMS, data models, ER diagrams</li>
+                        <li><strong>SQL Mastery:</strong> Complete SQL tutorial from basics to advanced queries</li>
+                        <li><strong>Database Design:</strong> Normalization, functional dependencies, schema design</li>
+                        <li><strong>Transaction Management:</strong> ACID properties, concurrency control, recovery</li>
+                        <li><strong>Advanced Topics:</strong> Indexing, query optimization, distributed databases</li>
+                        <li><strong>NoSQL Databases:</strong> MongoDB, Cassandra, Redis basics</li>
+                        <li><strong>Database Security:</strong> Authentication, authorization, encryption</li>
+                    </ul>
+                    <div class="playlist-stats">
+                        <div class="playlist-stat">
+                            <i class="fas fa-video"></i>
+                            <span>45+ Total Videos</span>
+                        </div>
+                        <div class="playlist-stat">
+                            <i class="far fa-clock"></i>
+                            <span>35+ Hours Content</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Python Programming Course Details -->
+        <section class="course-details" id="python-details">
+            <div class="course-details-header">
+                <h2><i class="fab fa-python"></i> Python Programming Course</h2>
+                <button class="close-details">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <div class="course-tabs">
+                <button class="course-tab active" data-tab="python-basics">Python Basics</button>
+                <button class="course-tab" data-tab="python-oop">Python OOP</button>
+                <button class="course-tab" data-tab="python-advanced">Python Advanced</button>
+                <button class="course-tab" data-tab="full-playlist-python">Full Playlist</button>
+            </div>
+            
+            <!-- Python Basics Tab Content -->
+            <div class="course-tab-content active" id="python-basics-content">
+                <div class="video-container">
+                    <div class="video-player" id="python-basics-video-player">
+                        <!-- Video Placeholder - Add YouTube video link here later -->
+                        <div class="video-placeholder">
+                            <i class="fab fa-python"></i>
+                            <h3>Python Programming Basics</h3>
+                            <p>Add YouTube video link here for Python Basics. The video will appear in this space.</p>
+                            <p style="font-size: 0.9rem; margin-top: 10px;">Replace this placeholder with iframe code when you have the video link.</p>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Python Programming for Beginners</h3>
+                        <p class="video-desc">Python is a versatile and beginner-friendly programming language. This section covers Python basics including variables, data types, operators, control structures, functions, and basic input/output operations. Perfect for absolute beginners.</p>
+                    </div>
+                </div>
+                
+                <div class="playlist-info">
+                    <h3><i class="fas fa-play-circle"></i> Python Fundamentals Section</h3>
+                    <p>Start your Python journey with comprehensive tutorials on Python syntax, data structures (lists, tuples, dictionaries, sets), control flow, functions, and file handling. Build a solid foundation for advanced Python programming.</p>
+                    <div class="playlist-stats">
+                        <div class="playlist-stat">
+                            <i class="fas fa-video"></i>
+                            <span>20+ Beginner Videos</span>
+                        </div>
+                        <div class="playlist-stat">
+                            <i class="far fa-clock"></i>
+                            <span>15+ Hours Content</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Python OOP Tab Content -->
+            <div class="course-tab-content" id="python-oop-content">
+                <div class="video-container">
+                    <div class="video-player" id="python-oop-video-player">
+                        <!-- Video Placeholder - Add YouTube video link here later -->
+                        <div class="video-placeholder">
+                            <i class="fas fa-object-group"></i>
+                            <h3>Object-Oriented Programming in Python</h3>
+                            <p>Add YouTube video link here for Python OOP. The video will appear in this space.</p>
+                            <p style="font-size: 0.9rem; margin-top: 10px;">Replace this placeholder with iframe code when you have the video link.</p>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Object-Oriented Programming with Python</h3>
+                        <p class="video-desc">Learn Object-Oriented Programming (OOP) concepts in Python including classes, objects, inheritance, polymorphism, encapsulation, and abstraction. Master OOP principles to write modular, reusable, and maintainable Python code.</p>
+                    </div>
+                </div>
+                
+                <div class="playlist-info">
+                    <h3><i class="fas fa-cube"></i> OOP Concepts in Python</h3>
+                    <p>This section covers Python's implementation of object-oriented programming with practical examples. Learn about class design, magic methods, properties, decorators, and design patterns in Python to become a proficient Python developer.</p>
+                    <div class="playlist-stats">
+                        <div class="playlist-stat">
+                            <i class="fas fa-video"></i>
+                            <span>15+ OOP Videos</span>
+                        </div>
+                        <div class="playlist-stat">
+                            <i class="far fa-clock"></i>
+                            <span>12+ Hours Content</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Python Advanced Tab Content -->
+            <div class="course-tab-content" id="python-advanced-content">
+                <div class="video-container">
+                    <div class="video-player" id="python-advanced-video-player">
+                        <!-- Video Placeholder - Add YouTube video link here later -->
+                        <div class="video-placeholder">
+                            <i class="fas fa-rocket"></i>
+                            <h3>Advanced Python Programming</h3>
+                            <p>Add YouTube video link here for Advanced Python. The video will appear in this space.</p>
+                            <p style="font-size: 0.9rem; margin-top: 10px;">Replace this placeholder with iframe code when you have the video link.</p>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Advanced Python Programming Concepts</h3>
+                        <p class="video-desc">Explore advanced Python topics including decorators, generators, context managers, metaclasses, concurrency, asynchronous programming, and Python's standard library. Take your Python skills to an expert level.</p>
+                    </div>
+                </div>
+                
+                <div class="playlist-info">
+                    <h3><i class="fas fa-chart-line"></i> Advanced Python Topics</h3>
+                    <p>Master advanced Python concepts for professional development including functional programming, design patterns, testing, debugging, performance optimization, and working with external libraries. Prepare for Python developer roles and advanced projects.</p>
+                    <div class="playlist-stats">
+                        <div class="playlist-stat">
+                            <i class="fas fa-video"></i>
+                            <span>25+ Advanced Videos</span>
+                        </div>
+                        <div class="playlist-stat">
+                            <i class="far fa-clock"></i>
+                            <span>20+ Hours Content</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Full Playlist Tab Content -->
+            <div class="course-tab-content" id="full-playlist-python-content">
+                <div class="video-container">
+                    <div class="video-player" id="full-playlist-python-player">
+                        <!-- Video Placeholder - Add YouTube playlist link here later -->
+                        <div class="video-placeholder">
+                            <i class="fas fa-list"></i>
+                            <h3>Complete Python Programming Playlist</h3>
+                            <p>Add YouTube playlist link here for the complete Python Programming course. The entire playlist will appear in this space.</p>
+                            <p style="font-size: 0.9rem; margin-top: 10px;">Replace this placeholder with iframe code when you have the playlist link.</p>
+                        </div>
+                    </div>
+                    <div class="video-info">
+                        <h3>Complete Python Programming Playlist</h3>
+                        <p class="video-desc">This comprehensive Python programming playlist covers everything from basic syntax to advanced concepts. Perfect for beginners, intermediate learners, and experienced programmers looking to master Python for various applications including web development, data science, automation, and machine learning.</p>
+                    </div>
+                </div>
+                
+                <div class="playlist-info">
+                    <h3><i class="fas fa-list"></i> Playlist Information</h3>
+                    <p>This complete playlist includes comprehensive coverage of:</p>
+                    <ul style="margin-left: 20px; margin-top: 10px; color: #666;">
+                        <li><strong>Python Fundamentals:</strong> Syntax, data types, control structures, functions</li>
+                        <li><strong>Data Structures:</strong> Lists, tuples, dictionaries, sets, comprehensions</li>
+                        <li><strong>Object-Oriented Programming:</strong> Classes, inheritance, polymorphism, encapsulation</li>
+                        <li><strong>File Handling:</strong> Reading/writing files, serialization, CSV/JSON processing</li>
+                        <li><strong>Advanced Topics:</strong> Decorators, generators, context managers, async programming</li>
+                        <li><strong>Python Libraries:</strong> NumPy, Pandas, Matplotlib for data science</li>
+                        <li><strong>Web Development:</strong> Flask/Django basics, REST APIs</li>
+                        <li><strong>Automation & Scripting:</strong> System automation, web scraping, task scheduling</li>
+                    </ul>
+                    <div class="playlist-stats">
+                        <div class="playlist-stat">
+                            <i class="fas fa-video"></i>
+                            <span>70+ Total Videos</span>
+                        </div>
+                        <div class="playlist-stat">
+                            <i class="far fa-clock"></i>
+                            <span>50+ Hours Content</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- Minimal Footer -->
@@ -847,9 +1493,8 @@
         
         // Course card functionality
         const courseCards = document.querySelectorAll('.course-card');
-        const courseDetails = document.getElementById('web-dev-details');
-        const closeDetailsBtn = document.getElementById('closeDetails');
         const expandBtns = document.querySelectorAll('.expand-btn');
+        const closeDetailsBtns = document.querySelectorAll('.close-details');
         
         // Show course details when a course card is clicked
         courseCards.forEach(card => {
@@ -874,40 +1519,68 @@
             });
         });
         
-        // Close course details
-        closeDetailsBtn.addEventListener('click', () => {
-            courseDetails.classList.remove('active');
-            // Scroll to top of courses grid
-            document.querySelector('.courses-grid').scrollIntoView({ behavior: 'smooth' });
+        // Close course details for all close buttons
+        closeDetailsBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const detailsSection = btn.closest('.course-details');
+                detailsSection.classList.remove('active');
+                // Scroll to top of courses grid
+                document.querySelector('.courses-grid').scrollIntoView({ behavior: 'smooth' });
+            });
         });
         
         function showCourseDetails(courseId) {
-            // For now, only Web Development has detailed content
+            // Hide all course details first
+            document.querySelectorAll('.course-details').forEach(detail => {
+                detail.classList.remove('active');
+            });
+            
+            // Show the selected course details
             if (courseId === 'web-dev') {
-                courseDetails.classList.add('active');
+                document.getElementById('web-dev-details').classList.add('active');
                 // Scroll to course details
-                courseDetails.scrollIntoView({ behavior: 'smooth' });
+                document.getElementById('web-dev-details').scrollIntoView({ behavior: 'smooth' });
+            } else if (courseId === 'ms-office') {
+                document.getElementById('ms-office-details').classList.add('active');
+                // Scroll to course details
+                document.getElementById('ms-office-details').scrollIntoView({ behavior: 'smooth' });
+            } else if (courseId === 'photoshop') {
+                document.getElementById('photoshop-details').classList.add('active');
+                // Scroll to course details
+                document.getElementById('photoshop-details').scrollIntoView({ behavior: 'smooth' });
+            } else if (courseId === 'networking') {
+                document.getElementById('networking-details').classList.add('active');
+                // Scroll to course details
+                document.getElementById('networking-details').scrollIntoView({ behavior: 'smooth' });
+            } else if (courseId === 'database') {
+                document.getElementById('database-details').classList.add('active');
+                // Scroll to course details
+                document.getElementById('database-details').scrollIntoView({ behavior: 'smooth' });
+            } else if (courseId === 'python') {
+                document.getElementById('python-details').classList.add('active');
+                // Scroll to course details
+                document.getElementById('python-details').scrollIntoView({ behavior: 'smooth' });
             } else {
                 // For other courses, show a temporary alert (to be replaced with actual content)
                 alert(`The ${courseId.replace('-', ' ').toUpperCase()} course content is being prepared and will be available soon!`);
             }
         }
         
-        // Course tabs functionality
+        // Course tabs functionality - for both course sections
         const courseTabs = document.querySelectorAll('.course-tab');
-        const tabContents = document.querySelectorAll('.course-tab-content');
         
         courseTabs.forEach(tab => {
             tab.addEventListener('click', () => {
                 const tabId = tab.dataset.tab;
+                const courseDetailsSection = tab.closest('.course-details');
                 
-                // Update active tab
-                courseTabs.forEach(t => t.classList.remove('active'));
+                // Update active tab within this course section
+                courseDetailsSection.querySelectorAll('.course-tab').forEach(t => t.classList.remove('active'));
                 tab.classList.add('active');
                 
-                // Show corresponding content
-                tabContents.forEach(content => content.classList.remove('active'));
-                document.getElementById(`${tabId}-content`).classList.add('active');
+                // Show corresponding content within this course section
+                courseDetailsSection.querySelectorAll('.course-tab-content').forEach(content => content.classList.remove('active'));
+                courseDetailsSection.querySelector(`#${tabId}-content`).classList.add('active');
             });
         });
         
